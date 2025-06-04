@@ -1,0 +1,44 @@
+/* 3.6- Service Section */
+.service-item {
+  width: 50%;
+}
+.service-item .section-header {
+  text-align: left;
+}
+.service-item .section-header .line {
+  margin: 0 0 40px 0;
+}
+.service-item-desc {
+  padding-right: 20px;
+  line-height: 1.5;
+  color: var(--gray);
+  font-size: 17px;
+}
+.service-item .service-item-list {
+  list-style: none;
+}
+.service-item-list li i {
+  color: var(--mainColor);
+}
+.service-item-img {
+  width: 100%;
+}
+.service-item-bollets {
+  list-style: none;
+  text-align: center;
+}
+.service-item-bollets li {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background-color: var(--bg-e8gray);
+  margin: 10px 5px;
+  border-radius: 50%;
+}
+.service-item-bollets li.active-bollet {
+  background-color: var(--mainColor);
+}
+.service-item-bollets li:hover {
+  background-color: var(--mainColor);
+  cursor: pointer;
+}

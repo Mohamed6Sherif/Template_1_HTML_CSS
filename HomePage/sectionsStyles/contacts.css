@@ -1,0 +1,70 @@
+/* 3.12- Get in Touch Section */
+.contact-item {
+  width: 30%;
+  text-align: center;
+}
+.contact-icon {
+  color: var(--mainColor);
+}
+.contact-item-title {
+  font-weight: bold;
+  margin: 20px 0;
+}
+.contact-item-data {
+  color: var(--gray);
+}
+.contact-item.mg-middle {
+  margin: 0 5%;
+}
+.send-message {
+  text-align: center;
+  padding: 50px;
+  justify-content: center;
+}
+.send-message-form {
+  width: 70%;
+  margin: auto;
+}
+.form-input-row {
+  display: flex;
+  gap: 20px;
+}
+.form-item {
+  flex: 1;
+  border: none;
+  border-radius: 10px;
+  background-color: #f0eeee;
+  height: 40px;
+  padding: 10px;
+}
+.form-item-subject {
+  border: none;
+  background-color: #f0eeee;
+  border-radius: 10px;
+  height: 40px;
+  width: 100%;
+  margin: 20px 0;
+  padding: 10px;
+}
+.form-item-area {
+  border: none;
+  background-color: #f0eeee;
+  border-radius: 10px;
+  height: 60px;
+  width: 100%;
+  padding: 10px;
+}
+.form-btn {
+  background-color: var(--mainColor);
+  border: none;
+  font-size: medium;
+  color: var(--whiteColor);
+  border-radius: 10px;
+  margin: 10px;
+  padding: 15px;
+  width: 30%;
+}
+.form-btn:hover {
+  cursor: pointer;
+  background-color: #183d86;
+}

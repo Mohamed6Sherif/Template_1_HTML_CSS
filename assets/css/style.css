@@ -1,0 +1,129 @@
+/* 
+    1- Common Styles
+    2- General Styles
+    3- Sections
+        3.1- Header Section
+        3.2- Home Section 
+        3.3- About Section 
+        3.4- Portfolio Section 
+        3.5- Services Section 
+        3.6- Prices Section 
+        3.7- Team Section 
+        3.8- Contact Section 
+        3.9- Footer Section 
+*/
+
+/* 1- Common Styles :
+        a- Sections's headers
+        b- Container
+        c- Overlay
+        d- obacity : hover
+        e- Sections' padding
+        f- hover effect1 (left to right)
+        g- hover effect2 (top to bottom)
+*/
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+/* 2- General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* CSS3 */
+}
+
+:root {
+  --mainColor: #6195ff;
+  --gray: #999;
+  --bg-e8gray: #e8e8e8;
+  --whiteColor: #fff;
+}
+
+body {
+  font-family: "Varela Round", sans-serif;
+}
+.container {
+  width: 80%;
+  margin: auto;
+}
+a {
+  text-decoration: none;
+}
+
+.pd-y {
+  padding: 120px 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: montserrat, sans-serif;
+}
+button {
+  font-family: inherit;
+}
+.hover-opacity:hover {
+  opacity: 0.8;
+}
+.hover-opacity {
+  transition: opacity 0.5s;
+}
+.section-header {
+  text-align: center;
+}
+.section-header .section-title {
+  font-size: 35px;
+}
+.section-header .line {
+  display: block;
+  height: 5px;
+  width: 60px;
+  margin: 0 auto 70px auto;
+  background-color: var(--mainColor);
+}
+
+.ltr-effect,
+.tb-effect {
+  position: relative;
+}
+.ltr-effect::after,
+.tb-effect::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #333;
+  z-index: -1;
+}
+.ltr-effect::after {
+  /* left to right */
+  width: 0;
+  transition: width 0.5s;
+}
+.ltr-effect:hover::after {
+  /* left to right */
+  width: 100%;
+}
+
+.tb-effect::after {
+  /* top to bottom */
+  height: 0;
+  transition: height 0.5s;
+}
+.tb-effect:hover::after {
+  /* top to bottom */
+  height: 100%;
+}
+/* 3- Sections */

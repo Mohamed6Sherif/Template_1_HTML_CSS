@@ -1,0 +1,36 @@
+/* 3.9- Testimonail Section */
+.testimonail {
+  position: relative;
+  height: 400px;
+  background-image: url("../../assets/images/background/background3.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+}
+.testimonail-items {
+  padding: 120px 0;
+  width: 80%;
+  margin: auto;
+}
+.testimonail-item {
+  width: 50%;
+}
+.testimonail-toplayer {
+  position: relative;
+  padding: 10px 0 40px 100px;
+  color: var(--whiteColor);
+}
+.testimonail-toplayer img {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  border-radius: 50%;
+}
+.testimonail-person-job {
+  font-size: 16px;
+  color: var(--mainColor);
+  margin-top: 5px;
+}
+.testimonail-desc {
+  color: var(--whiteColor);
+  font-size: 17px;
+}
